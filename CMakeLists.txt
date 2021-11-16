@@ -27,7 +27,7 @@ include("${nRF5_cmake_path}")
 
 # project() must be called after including nRF5-cmake.cmake but before calling nRF5_setup
 # to ensure variables are set correctly
-project(BlinkyExampleProject
+project(MymbedTLSProject
         VERSION ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_BUGFIX}
         LANGUAGES NONE)
 
