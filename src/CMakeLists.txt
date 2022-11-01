@@ -38,10 +38,10 @@ nRF5_addBLEGATT()
 nRF5_addBLEQWR()
 nRF5_addBLEService(ble_lbs)
 
-# nRF5_includeMBEDTLS("${NRF_PROJECT_CONFIG_PATH}") # path to `sdk_config.h`
-# nRF5_addMBED(${target} crypto) # crypto is the most minimal library option
-# nRF5_addCryptoBackend(aes mbedtls)
-# nRF5_addCryptoBackend(aead mbedtls)
+nRF5_includeMBEDTLS("${NRF_PROJECT_CONFIG_PATH}") # path to `sdk_config.h`
+nRF5_addMBED(${target} tls) # crypto is the most minimal library option
+nRF5_addCryptoBackend(aes mbedtls)
+nRF5_addCryptoBackend(aead mbedtls)
 
 # usually you would include files in this directory here, like so:
 #list(APPEND SOURCE_FILES
